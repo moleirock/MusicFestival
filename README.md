@@ -1,4 +1,4 @@
-# FestivalMusica / MusicFestival
+# MusicFestival
 Project using GULP and SASS
 
 Hello everyone, my name is Alberto Moleiro and I am a developing developer.
