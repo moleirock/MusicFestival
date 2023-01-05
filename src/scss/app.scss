@@ -1,0 +1,13 @@
+/* Sintaxis antigua de importar, no hace falta poner la barra baja ni la extension en la ruta del archivo que queremos importar
+esta manera lo que hace es que lo que se importe este disponible globalmente a diferencia de la forma nueva. Era un problema de performance*/
+
+// @import "base/variables";
+// @import "contenido/contenido";
+
+/* Nueva sintaxis (mas complicada) con esta nueva sintaxis lo que hacemos es crear un archivo _index.scss en cada carpeta del proyecto, dentro de este archivo 
+usando la funcion @forward 'ruta'; vamos indicando que archivos tenemos para que se puedan importar en el archivo principal, en el archivo principal solo debemos 
+indicar la ruta de las carpetas con @use y la api de sass identificara que tiene que buscar el archivo de index para saber que puede importar. */
+// @use va a compilar los archivos y tambien se usa para importar los archivos y que se puedan usar en
+// los otros archivos del proyecto, @forward(en los index) lo que hace es  apuntar a los archuivos qse van compilar.
+@use "base";
+@use 'layout';
